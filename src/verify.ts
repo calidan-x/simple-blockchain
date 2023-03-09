@@ -9,8 +9,12 @@ const privateKey = key.getPrivate("hex")
 console.log("Public key:")
 console.log(publicKey)
 
+console.log("")
+
 console.log("Private key:")
 console.log(privateKey)
+
+console.log("")
 
 // 获取 私钥对象
 const priKey = ec.keyFromPrivate(privateKey, "hex")
@@ -20,4 +24,4 @@ const signature = priKey.sign("xxxxxxx", "base64")
 // 获取 公钥钥对象
 const pubKey = ec.keyFromPublic(publicKey, "hex")
 // 验证签名
-console.log(pubKey.verify("xxxxxxx", signature))
+console.log("验证结果: " + pubKey.verify("xxxxxxx", signature))
