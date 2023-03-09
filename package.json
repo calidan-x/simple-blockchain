@@ -1,0 +1,17 @@
+{
+  "name": "simple-blockchain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "verify": "ts-node src/verify.ts",
+    "run": "ts-node src/main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/elliptic": "^6.4.14",
+    "elliptic": "^6.5.4"
+  }
+}
